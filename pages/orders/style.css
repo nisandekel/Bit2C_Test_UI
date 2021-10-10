@@ -1,0 +1,17 @@
+
+.orders-container{
+    margin: 5vh;
+}
+
+.order{
+    width: 700px;
+    border: 2px solid grey;
+    border-radius: 7px;
+    background-color: rgb(46, 40, 40);
+    color: white;
+}
+
+.order:hover{
+    border: 2px solid rgb(172, 170, 170);
+    background-color: rgb(99, 96, 96);
+}
