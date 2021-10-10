@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-
+    <script src='./login.js'></script>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" placeholder="password">
         </div>
-        <button type="button" class="btn btn-primary my-2">Sign In</button>
+        <button type="button" class="btn btn-primary my-2" onclick="login()">Sign In</button>
         <div class="register-link-wrapper my-2">
             New user ?
             <button type="button" class="btn btn-link" data-bs-toggle="modal"
@@ -40,20 +40,21 @@
                 <div class="modal-body">
                     <div class="my-4">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="email">
+                        <input type="email" class="form-control" id="email-register" placeholder="email">
                     </div>
                     <div class="my-4">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="password">
+                        <input type="password" class="form-control" id="password-register" placeholder="password">
                     </div>
                     <div class="my-4">
                         <label for="repeat-password" class="form-label">Repeat Password</label>
-                        <input type="password" class="form-control" id="repeat-password" placeholder="password">
+                        <input type="password" class="form-control" id="repeat-password-register"
+                            placeholder="password">
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-primary" onclick="register()">Submit</button>
                 </div>
             </div>
         </div>
