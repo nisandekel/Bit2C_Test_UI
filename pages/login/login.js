@@ -24,7 +24,7 @@ const register = () => {
             document.querySelector('#email-register').value = '';
             document.querySelector('#password-register').value = '';
             document.querySelector('#repeat-password-register').value = '';
-            // message
+            alert('Registered successfully!')
       })
 }
 
@@ -49,7 +49,7 @@ const login = () => {
               window.location.href = '../orders/orders.html';
               localStorage.setItem('userEmail', email);
           } else {
-            // message
+            alert('Login error!')
           }
       });
 }
